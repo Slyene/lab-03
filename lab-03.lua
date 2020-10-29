@@ -1,19 +1,18 @@
 lgi = require 'lgi'
 --Chesnokov 474
 gtk = lgi.Gtk
---gdk = lgi.Gdk
+gdk = lgi.Gdk
 gtk.init()
 
 bld = gtk.Builder()
 bld:add_from_file('lab-03.glade')
 
---prov = gtk.CssProvider()
---prov:load_from_path('lab-03.css')
+prov = gtk.CssProvider()
+prov:load_from_path('lab-03.css')
 
---ctx = gtk.StyleContext()
---scr = gdk.Screen.get_default()
---ctx.add_provider_for_screen(scr, prov)
-gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+ctx = gtk.StyleContext()
+scr = gdk.Screen.get_default()
+ctx.add_provider_for_screen(scr, prov, gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
 
 ui = bld.objects
 --Chesnokov 474

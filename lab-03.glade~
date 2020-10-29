@@ -120,9 +120,6 @@
                 <property name="can_focus">False</property>
                 <property name="margin_right">20</property>
                 <property name="label" translatable="yes">Value:</property>
-                <style>
-                  <class name=".lbl"/>
-                </style>
               </object>
               <packing>
                 <property name="expand">False</property>
